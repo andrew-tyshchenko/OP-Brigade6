@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SKktQd/39uo=",
+  "dgSpecHash": "GpWb4qYMkoM=",
   "success": true,
-  "projectFilePath": "D:\\LuckyAceApp\\LuckyAceApp\\LuckyAceApp.csproj",
+  "projectFilePath": "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dmytro\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
   ],

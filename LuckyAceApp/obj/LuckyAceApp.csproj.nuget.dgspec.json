@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LuckyAceApp\\LuckyAceApp\\LuckyAceApp.csproj": {}
+    "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj": {}
   },
   "projects": {
-    "D:\\LuckyAceApp\\LuckyAceApp\\LuckyAceApp.csproj": {
+    "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LuckyAceApp\\LuckyAceApp\\LuckyAceApp.csproj",
+        "projectUniqueName": "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
         "projectName": "LuckyAceApp",
-        "projectPath": "D:\\LuckyAceApp\\LuckyAceApp\\LuckyAceApp.csproj",
+        "projectPath": "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
         "packagesPath": "C:\\Users\\Dmytro\\.nuget\\packages\\",
-        "outputPath": "D:\\LuckyAceApp\\LuckyAceApp\\obj\\",
+        "outputPath": "D:\\OP-Brigade6\\LuckyAceApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

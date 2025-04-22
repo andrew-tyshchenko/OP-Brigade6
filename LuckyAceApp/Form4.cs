@@ -9,15 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BCrypt.Net;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static LuckyAceForm.User;
 
 namespace LuckyAceForm
 {
     public partial class Form4 : Form
     {
         private string storedHashedPassword;
+        private UserRepository userRepository;
         public Form4()
         {
             InitializeComponent();
+            userRepository = new UserRepository(new JsonStorage<User>("users.json"));
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -33,12 +37,13 @@ namespace LuckyAceForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string Username = textBox1.Text;
-            if (string.IsNullOrEmpty(Username))
+            string username = textBox1.Text;
+            if (string.IsNullOrEmpty(username))
             {
                 MessageBox.Show("Введіть ім'я користувача");
                 return;
             }
+
             string password = textBox2.Text;
             if (string.IsNullOrEmpty(password))
             {
@@ -46,27 +51,49 @@ namespace LuckyAceForm
                 return;
             }
 
-            storedHashedPassword = BCrypt.Net.BCrypt.EnhancedHashPassword(password, 13);
+            // Hash the password
+            string hashedPassword = BCrypt.Net.BCrypt.EnhancedHashPassword(password, 13);
+
+            // Get next available ID
+            var allUsers = userRepository.GetAll().ToList();
+            int newId = allUsers.Count > 0 ? allUsers.Max(u => u.Id) + 1 : 1;
+
+            // Create user with hashed password
+            User user = new User(newId, username, hashedPassword);
+            userRepository.Add(user);
+
             MessageBox.Show("Користувач зареєстрований!");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string username = textBox1.Text;
             string password = textBox2.Text;
-            if (string.IsNullOrEmpty(password))
+
+            User user = userRepository.GetAll().FirstOrDefault(u => u.Username == username);
+
+            if (user == null)
             {
-                MessageBox.Show("Введіть пароль!");
+                MessageBox.Show("Користувача не знайдено!");
                 return;
             }
 
-            if (BCrypt.Net.BCrypt.EnhancedVerify(password, storedHashedPassword))
+            try
             {
-                MessageBox.Show("Успішний вхід!");
-                new AdminForm().ShowDialog();
+                // Use EnhancedVerify for consistency with EnhancedHashPassword
+                if (BCrypt.Net.BCrypt.EnhancedVerify(password, user.Password))
+                {
+                    MessageBox.Show("Успішний вхід!");
+                    new AdminForm().ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Невірний пароль!");
+                }
             }
-            else
+            catch (BCrypt.Net.SaltParseException)
             {
-                MessageBox.Show("Невірний пароль!");
+                MessageBox.Show("Помилка перевірки пароля. Можливо, дані пошкоджені.");
             }
         }
 

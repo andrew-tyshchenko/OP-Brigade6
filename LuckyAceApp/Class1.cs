@@ -56,15 +56,13 @@ namespace LuckyAceForm
     class User : BaseEntity
     {
         public string Username { get; set; }
-        public string Email { get; set; }
-        public decimal Balance { get; set; }
+        public string Password { get; set; }
 
-        public User(int id, string username, string email, decimal balance)
+        public User(int id, string username, string password)
         {
             Id = id;
             Username = username;
-            Email = email;
-            Balance = balance;
+            Password = password;
         }
 
         // Клас Bet, що реалізує IBettable
