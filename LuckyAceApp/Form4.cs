@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,6 @@ namespace LuckyAceForm
 {
     public partial class Form4 : Form
     {
-        private string storedHashedPassword;
         private UserRepository userRepository;
         public Form4()
         {
@@ -84,7 +84,14 @@ namespace LuckyAceForm
                 if (BCrypt.Net.BCrypt.EnhancedVerify(password, user.Password))
                 {
                     MessageBox.Show("Успішний вхід!");
-                    new AdminForm().ShowDialog();
+                    if (user.Username == "admin")
+                    {
+                        new AdminForm().ShowDialog();
+                    } else
+                    {
+                        new MainForm(user).ShowDialog();
+                    }
+                    
                 }
                 else
                 {

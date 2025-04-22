@@ -2,6 +2,13 @@
   {
     "Username": "admin",
     "Password": "$2a$13$0TVp6vb6X/fJlIhP50nGbuflzt5NYT1nbBs2ZiNV0vdgZBP4QBxRy",
+    "Balance": 1000,
     "Id": 1
+  },
+  {
+    "Username": "user",
+    "Password": "$2a$13$wqtOT9f/KbFc19iutuGVfePy6atYKnvEOkx3PUz5TKnrPzdYS2g2u",
+    "Balance": 697,
+    "Id": 2
   }
 ]

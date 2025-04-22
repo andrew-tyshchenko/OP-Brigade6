@@ -46,13 +46,15 @@ namespace LuckyAceForm
         {
             try
             {
-                int id = int.Parse(textBox2.Text);
                 DateTime date = dateTimePicker1.Value;
                 string name = textBox4.Text;
                 string team1 = textBox5.Text;
                 string team2 = textBox6.Text;
 
-                Match match = new Match(id, date, name, team1, team2);
+                var allMatches = matchRepository.GetAll().ToList();
+                int newId = allMatches.Count > 0 ? allMatches.Max(u => u.Id) + 1 : 1;
+
+                Match match = new Match(newId, date, name, team1, team2);
                 matchRepository.Add(match);
                 LoadMatches();
             }
@@ -81,18 +83,16 @@ namespace LuckyAceForm
 
         private void button3_Click_1(object sender, EventArgs e) // Update Match
         {
-            if (listBox1.SelectedIndex != -1 && !string.IsNullOrWhiteSpace(textBox2.Text))
+            if (listBox1.SelectedIndex != -1)
             {
                 try
                 {
-                    int id = int.Parse(textBox2.Text);
                     DateTime date = dateTimePicker1.Value;
                     string name = textBox4.Text;
                     string team1 = textBox5.Text;
                     string team2 = textBox6.Text;
 
                     var matchToUpdate = matchRepository.GetAll()[listBox1.SelectedIndex];
-                    matchToUpdate.Id = id;
                     matchToUpdate.Date = date;
                     matchToUpdate.Name = name;
                     matchToUpdate.Team1 = team1;
@@ -116,7 +116,6 @@ namespace LuckyAceForm
         private void textBox4_TextChanged(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
         private void label4_Click(object sender, EventArgs e) { }
-        private void textBox2_TextChanged(object sender, EventArgs e) { }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) { }
         private void label5_Click(object sender, EventArgs e) { }
         private void label5_Click_1(object sender, EventArgs e) { }

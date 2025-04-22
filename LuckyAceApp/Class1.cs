@@ -53,16 +53,18 @@ namespace LuckyAceForm
     }
 
     // Клас User
-    class User : BaseEntity
+    public class User : BaseEntity
     {
         public string Username { get; set; }
         public string Password { get; set; }
+        public int Balance { get; set; }
 
         public User(int id, string username, string password)
         {
             Id = id;
             Username = username;
             Password = password;
+            Balance = 1000;
         }
 
         // Клас Bet, що реалізує IBettable
@@ -70,14 +72,16 @@ namespace LuckyAceForm
         {
             public User Player { get; set; }
             public Match GameEvent { get; set; }
-            public decimal Amount { get; set; }
+            public int Amount { get; set; }
+            public string Team { get; set; }
 
-            public Bet(int id, User player, Match gameEvent, decimal amount)
+            public Bet(int id, User player, Match gameEvent, int amount, string team)
             {
                 Id = id;
                 Player = player;
                 GameEvent = gameEvent;
                 Amount = amount;
+                Team = team;
             }
         }
 

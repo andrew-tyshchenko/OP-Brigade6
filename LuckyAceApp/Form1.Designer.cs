@@ -29,9 +29,7 @@ namespace LuckyAceForm
             btnAddBet = new Button();
             button1 = new Button();
             label1 = new Label();
-            textBox2 = new TextBox();
             textBox4 = new TextBox();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             listBox1 = new ListBox();
@@ -118,9 +116,9 @@ namespace LuckyAceForm
             // 
             // button1
             // 
-            button1.Location = new Point(68, 211);
+            button1.Location = new Point(68, 285);
             button1.Name = "button1";
-            button1.Size = new Size(93, 23);
+            button1.Size = new Size(197, 36);
             button1.TabIndex = 0;
             button1.Text = "Add Event";
             button1.UseVisualStyleBackColor = true;
@@ -136,38 +134,19 @@ namespace LuckyAceForm
             label1.Text = "Events";
             label1.Click += label1_Click;
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(68, 69);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(146, 26);
-            textBox2.TabIndex = 3;
-            textBox2.TextChanged += textBox2_TextChanged;
-            // 
             // textBox4
             // 
-            textBox4.Location = new Point(68, 164);
+            textBox4.Location = new Point(65, 69);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(146, 26);
+            textBox4.Size = new Size(200, 26);
             textBox4.TabIndex = 5;
             textBox4.TextChanged += textBox4_TextChanged;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(65, 50);
-            label2.Name = "label2";
-            label2.Size = new Size(17, 15);
-            label2.TabIndex = 6;
-            label2.Text = "Id";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(65, 98);
+            label3.Location = new Point(65, 103);
             label3.Name = "label3";
             label3.Size = new Size(31, 15);
             label3.TabIndex = 7;
@@ -176,7 +155,7 @@ namespace LuckyAceForm
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(65, 146);
+            label4.Location = new Point(65, 50);
             label4.Name = "label4";
             label4.Size = new Size(39, 15);
             label4.TabIndex = 8;
@@ -189,7 +168,7 @@ namespace LuckyAceForm
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(306, 69);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(269, 289);
+            listBox1.Size = new Size(242, 199);
             listBox1.TabIndex = 9;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
@@ -197,30 +176,30 @@ namespace LuckyAceForm
             // 
             dateTimePicker1.Location = new Point(68, 121);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(201, 23);
+            dateTimePicker1.Size = new Size(197, 23);
             dateTimePicker1.TabIndex = 10;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(68, 280);
+            textBox5.Location = new Point(68, 179);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(146, 26);
+            textBox5.Size = new Size(197, 26);
             textBox5.TabIndex = 11;
             textBox5.TextChanged += textBox1_TextChanged;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(68, 338);
+            textBox6.Location = new Point(68, 241);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(146, 26);
+            textBox6.Size = new Size(197, 26);
             textBox6.TabIndex = 12;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(65, 259);
+            label5.Location = new Point(68, 161);
             label5.Name = "label5";
             label5.Size = new Size(44, 15);
             label5.TabIndex = 13;
@@ -230,7 +209,7 @@ namespace LuckyAceForm
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(65, 319);
+            label6.Location = new Point(68, 223);
             label6.Name = "label6";
             label6.Size = new Size(44, 15);
             label6.TabIndex = 14;
@@ -238,7 +217,7 @@ namespace LuckyAceForm
             // 
             // button2
             // 
-            button2.Location = new Point(604, 69);
+            button2.Location = new Point(306, 286);
             button2.Name = "button2";
             button2.Size = new Size(105, 35);
             button2.TabIndex = 15;
@@ -248,9 +227,9 @@ namespace LuckyAceForm
             // 
             // button3
             // 
-            button3.Location = new Point(604, 123);
+            button3.Location = new Point(436, 285);
             button3.Name = "button3";
-            button3.Size = new Size(105, 30);
+            button3.Size = new Size(112, 36);
             button3.TabIndex = 16;
             button3.Text = "Edit";
             button3.UseVisualStyleBackColor = true;
@@ -258,7 +237,7 @@ namespace LuckyAceForm
             // 
             // AdminForm
             // 
-            ClientSize = new Size(957, 495);
+            ClientSize = new Size(601, 374);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label6);
@@ -269,9 +248,7 @@ namespace LuckyAceForm
             Controls.Add(listBox1);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(textBox4);
-            Controls.Add(textBox2);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "AdminForm";
@@ -286,9 +263,7 @@ namespace LuckyAceForm
 
         private Button button1;
         private Label label1;
-        private TextBox textBox2;
         private TextBox textBox4;
-        private Label label2;
         private Label label3;
         private Label label4;
         private ListBox listBox1;
