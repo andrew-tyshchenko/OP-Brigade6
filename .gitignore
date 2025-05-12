@@ -1,7 +1,7 @@
 
 # Created by https://www.gitignore.io/api/vuejs,django,virtualenv,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=vuejs,django,virtualenv,visualstudiocode
-
+.vs/*
 *.vsidx
 
 ### Django ###

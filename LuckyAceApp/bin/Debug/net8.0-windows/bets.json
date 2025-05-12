@@ -52,5 +52,41 @@
     "Amount": 100,
     "Team": "Brazil",
     "Id": 3
+  },
+  {
+    "Player": {
+      "Username": "user",
+      "Password": "$2a$13$wqtOT9f/KbFc19iutuGVfePy6atYKnvEOkx3PUz5TKnrPzdYS2g2u",
+      "Balance": 697,
+      "Id": 2
+    },
+    "GameEvent": {
+      "Date": "2025-04-22T17:28:59.0453092+03:00",
+      "Name": "World Cup",
+      "Team1": "Germany",
+      "Team2": "Brazil",
+      "Id": 2
+    },
+    "Amount": 3,
+    "Team": "Brazil",
+    "Id": 4
+  },
+  {
+    "Player": {
+      "Username": "user",
+      "Password": "$2a$13$wqtOT9f/KbFc19iutuGVfePy6atYKnvEOkx3PUz5TKnrPzdYS2g2u",
+      "Balance": 694,
+      "Id": 2
+    },
+    "GameEvent": {
+      "Date": "2025-04-22T17:28:59.0453092+03:00",
+      "Name": "World Cup",
+      "Team1": "Germany",
+      "Team2": "Brazil",
+      "Id": 2
+    },
+    "Amount": 3,
+    "Team": "Draw",
+    "Id": 5
   }
 ]

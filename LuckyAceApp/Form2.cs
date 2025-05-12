@@ -28,9 +28,10 @@ namespace LuckyAceForm
             user = logged_user;
 
             // Initialize repositories with JSON storage
-            matchRepository = new MatchRepository(new JsonStorage<Match>("matches.json"));
-            userRepository = new UserRepository(new JsonStorage<User>("users.json"));
-            betRepository = new BetRepository(new JsonStorage<Bet>("bets.json"));
+            var db = new SQLiteDb();
+            matchRepository = new MatchRepository(db);
+            userRepository = new UserRepository(db);
+            betRepository = new BetRepository(db);
 
             LoadMatches();
             LoadBallance();
@@ -91,10 +92,27 @@ namespace LuckyAceForm
                 } else if (radioButton3.Checked){
                     team = match.Team2;
                 }
-                Bet bet = new Bet(newId, user, match, amount, team);
-                betRepository.Add(bet);
-                user.Balance -= amount;
-                userRepository.Update(user);
+
+                Bet bet = new Bet(newId, user.Id, match.Id, amount, team);
+
+                var validationResults = ValidationService.Validate(bet);
+
+                if (validationResults.Any())
+                {
+                    Console.WriteLine("Validation failed. Errors:");
+                    foreach (var error in validationResults)
+                    {
+                        Console.WriteLine($"- {error.ErrorMessage}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Validation passed. Object saved.");
+                    betRepository.Add(bet);
+                    user.Balance -= amount;
+                    userRepository.Update(user);
+                }
+
                 LoadBallance();
                 LoadBets();
             }

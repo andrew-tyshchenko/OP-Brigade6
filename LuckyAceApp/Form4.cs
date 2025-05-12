@@ -21,7 +21,8 @@ namespace LuckyAceForm
         public Form4()
         {
             InitializeComponent();
-            userRepository = new UserRepository(new JsonStorage<User>("users.json"));
+            var db = new SQLiteDb();
+            userRepository = new UserRepository(db);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -59,7 +60,7 @@ namespace LuckyAceForm
             int newId = allUsers.Count > 0 ? allUsers.Max(u => u.Id) + 1 : 1;
 
             // Create user with hashed password
-            User user = new User(newId, username, hashedPassword);
+            User user = new User(newId, username, hashedPassword, 1000);
             userRepository.Add(user);
 
             MessageBox.Show("Користувач зареєстрований!");
