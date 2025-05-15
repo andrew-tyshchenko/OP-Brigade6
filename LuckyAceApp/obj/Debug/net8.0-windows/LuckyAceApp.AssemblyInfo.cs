@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LuckyAceApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e63113a03a034fccfc8fc2f225586a5899aa81d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34cec6db8ac82b5691a66ff69982c4dabb4679f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("LuckyAceApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LuckyAceApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

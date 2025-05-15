@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.SQLite;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -161,7 +162,7 @@ namespace LuckyAceForm
         public int UserId { get; set; }  // Reference to User, not the User object
         [Required]
         public int MatchId { get; set; } // Reference to Match, not the Match object
-        [Required]
+        [Required, NotNull]
         public decimal Amount { get; set; }
         [Required, MinLength(1), MaxLength(30)]
         public string Team { get; set; }

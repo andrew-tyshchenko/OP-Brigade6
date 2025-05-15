@@ -85,7 +85,7 @@ namespace LuckyAceForm
                 int amount = Convert.ToInt32(numericUpDown1.Value);
                 string team = "";
                 if (radioButton1.Checked) {
-                    team = match.Team1; 
+                    team = match.Team1;
                 }
                 else if (radioButton2.Checked){
                     team = "Draw";
@@ -95,19 +95,23 @@ namespace LuckyAceForm
 
                 Bet bet = new Bet(newId, user.Id, match.Id, amount, team);
 
+                if (bet.Amount == 0 || bet.Amount.GetType() == typeof(decimal))
+                {
+                    MessageBox.Show("Amount of bet should be decimal nubmer bigger than zero.");
+                    return;
+                }
+
                 var validationResults = ValidationService.Validate(bet);
 
                 if (validationResults.Any())
                 {
-                    Console.WriteLine("Validation failed. Errors:");
                     foreach (var error in validationResults)
                     {
-                        Console.WriteLine($"- {error.ErrorMessage}");
+                        MessageBox.Show($"- {error.ErrorMessage}");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Validation passed. Object saved.");
                     betRepository.Add(bet);
                     user.Balance -= amount;
                     userRepository.Update(user);

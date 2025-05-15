@@ -15,7 +15,7 @@ using static LuckyAceForm.User;
 
 namespace LuckyAceForm
 {
-    public partial class Form4 : Form
+    public partial class Form4 : Form // LoginForm
     {
         private UserRepository userRepository;
         public Form4()
@@ -33,7 +33,14 @@ namespace LuckyAceForm
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+        }
 
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -88,11 +95,12 @@ namespace LuckyAceForm
                     if (user.Username == "admin")
                     {
                         new AdminForm().ShowDialog();
-                    } else
+                    }
+                    else
                     {
                         new MainForm(user).ShowDialog();
                     }
-                    
+
                 }
                 else
                 {
@@ -106,6 +114,11 @@ namespace LuckyAceForm
         }
 
         private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
