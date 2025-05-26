@@ -25,25 +25,7 @@ namespace LuckyAceForm
             userRepository = new UserRepository(db);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox2_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Register()
         {
             string username = textBox1.Text;
             if (string.IsNullOrEmpty(username))
@@ -59,21 +41,18 @@ namespace LuckyAceForm
                 return;
             }
 
-            // Hash the password
             string hashedPassword = BCrypt.Net.BCrypt.EnhancedHashPassword(password, 13);
 
-            // Get next available ID
             var allUsers = userRepository.GetAll().ToList();
             int newId = allUsers.Count > 0 ? allUsers.Max(u => u.Id) + 1 : 1;
 
-            // Create user with hashed password
             User user = new User(newId, username, hashedPassword, 1000);
             userRepository.Add(user);
 
             MessageBox.Show("Користувач зареєстрований!");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Login()
         {
             string username = textBox1.Text;
             string password = textBox2.Text;
@@ -88,7 +67,6 @@ namespace LuckyAceForm
 
             try
             {
-                // Use EnhancedVerify for consistency with EnhancedHashPassword
                 if (BCrypt.Net.BCrypt.EnhancedVerify(password, user.Password))
                 {
                     MessageBox.Show("Успішний вхід!");
@@ -113,14 +91,14 @@ namespace LuckyAceForm
             }
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            Register();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Login();
         }
     }
 }

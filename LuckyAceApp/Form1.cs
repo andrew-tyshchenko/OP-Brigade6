@@ -28,7 +28,6 @@ namespace LuckyAceForm
             InitializeComponent();
 
             var db = new SQLiteDb();
-            // Initialize repositories with JSON storage
             matchRepository = new MatchRepository(db);
             userRepository = new UserRepository(db);
             betRepository = new BetRepository(db);
@@ -45,7 +44,7 @@ namespace LuckyAceForm
             }
         }
 
-        private void button1_Click(object sender, EventArgs e) // Add Match
+        private void AddMatch()
         {
             try
             {
@@ -81,7 +80,7 @@ namespace LuckyAceForm
             }
         }
 
-        private void button2_Click(object sender, EventArgs e) // Delete Match
+        private void DeleteMatch()
         {
             if (listBox1.SelectedIndex != -1)
             {
@@ -98,7 +97,7 @@ namespace LuckyAceForm
             }
         }
 
-        private void button3_Click_1(object sender, EventArgs e) // Update Match
+        private void UpdateMatch()
         {
             if (listBox1.SelectedIndex != -1)
             {
@@ -137,13 +136,7 @@ namespace LuckyAceForm
             }
         }
 
-        // Other event handlers that don't need changes
-        private void AdminForm_Load(object sender, EventArgs e) { }
-        private void label1_Click(object sender, EventArgs e) { }
-        private void textBox4_TextChanged(object sender, EventArgs e) { }
-        private void label2_Click(object sender, EventArgs e) { }
-        private void label4_Click(object sender, EventArgs e) { }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void SelectMatch()
         {
             if (listBox1.SelectedIndex != -1)
             {
@@ -164,10 +157,21 @@ namespace LuckyAceForm
             }
         }
 
-        private void label5_Click(object sender, EventArgs e) { }
-        private void label5_Click_1(object sender, EventArgs e) { }
-        private void label6_Click(object sender, EventArgs e) { }
-        private void textBox1_TextChanged(object sender, EventArgs e) { }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddMatch();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DeleteMatch();
+        }
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            UpdateMatch();
+        }
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SelectMatch();
+        }
     }
-
 }

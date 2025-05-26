@@ -132,7 +132,6 @@ namespace LuckyAceForm
             label1.Size = new Size(41, 15);
             label1.TabIndex = 2;
             label1.Text = "Events";
-            label1.Click += label1_Click;
             // 
             // textBox4
             // 
@@ -141,7 +140,6 @@ namespace LuckyAceForm
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(200, 26);
             textBox4.TabIndex = 5;
-            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label3
             // 
@@ -160,7 +158,6 @@ namespace LuckyAceForm
             label4.Size = new Size(39, 15);
             label4.TabIndex = 8;
             label4.Text = "Name";
-            label4.Click += label4_Click;
             // 
             // listBox1
             // 
@@ -186,7 +183,6 @@ namespace LuckyAceForm
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(197, 26);
             textBox5.TabIndex = 11;
-            textBox5.TextChanged += textBox1_TextChanged;
             // 
             // textBox6
             // 
@@ -204,7 +200,6 @@ namespace LuckyAceForm
             label5.Size = new Size(44, 15);
             label5.TabIndex = 13;
             label5.Text = "Team 1";
-            label5.Click += label5_Click_1;
             // 
             // label6
             // 
@@ -252,7 +247,6 @@ namespace LuckyAceForm
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "AdminForm";
-            Load += AdminForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewMatches).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBets).EndInit();
