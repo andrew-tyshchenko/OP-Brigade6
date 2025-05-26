@@ -38,18 +38,20 @@
             // 
             // button1
             // 
-            button1.Location = new Point(94, 229);
+            button1.BackColor = Color.DarkSeaGreen;
+            button1.Location = new Point(94, 256);
             button1.Name = "button1";
             button1.Size = new Size(127, 30);
             button1.TabIndex = 0;
             button1.Text = "Sing In";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(92, 101);
+            label1.BackColor = SystemColors.ButtonShadow;
+            label1.Location = new Point(138, 137);
             label1.Name = "label1";
             label1.Size = new Size(37, 15);
             label1.TabIndex = 1;
@@ -58,7 +60,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(94, 164);
+            label2.BackColor = SystemColors.ControlDark;
+            label2.Location = new Point(127, 196);
             label2.Name = "label2";
             label2.Size = new Size(57, 15);
             label2.TabIndex = 2;
@@ -66,14 +69,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(94, 120);
+            textBox1.Location = new Point(94, 155);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(127, 23);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(94, 181);
+            textBox2.Location = new Point(94, 214);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(127, 23);
             textBox2.TabIndex = 4;
@@ -81,25 +84,29 @@
             // 
             // button2
             // 
-            button2.Location = new Point(94, 265);
+            button2.BackColor = Color.LightCoral;
+            button2.Location = new Point(94, 292);
             button2.Name = "button2";
             button2.Size = new Size(127, 31);
             button2.TabIndex = 5;
             button2.Text = "Register";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(323, 389);
+            BackgroundImage = LuckyAceApp.Properties.Resources._1;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(318, 389);
             Controls.Add(button2);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
+            DoubleBuffered = true;
             Name = "Form4";
             Text = "Form4";
             ResumeLayout(false);

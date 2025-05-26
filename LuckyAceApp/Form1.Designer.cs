@@ -116,17 +116,20 @@ namespace LuckyAceForm
             // 
             // button1
             // 
-            button1.Location = new Point(68, 285);
+            button1.BackgroundImage = LuckyAceApp.Properties.Resources._3;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.ImageAlign = ContentAlignment.MiddleRight;
+            button1.Location = new Point(105, 278);
             button1.Name = "button1";
-            button1.Size = new Size(197, 36);
+            button1.Size = new Size(77, 76);
             button1.TabIndex = 0;
-            button1.Text = "Add Event";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.SeaGreen;
             label1.Location = new Point(303, 50);
             label1.Name = "label1";
             label1.Size = new Size(41, 15);
@@ -135,6 +138,7 @@ namespace LuckyAceForm
             // 
             // textBox4
             // 
+            textBox4.BackColor = Color.SeaGreen;
             textBox4.Location = new Point(65, 69);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
@@ -144,6 +148,7 @@ namespace LuckyAceForm
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.SeaGreen;
             label3.Location = new Point(65, 103);
             label3.Name = "label3";
             label3.Size = new Size(31, 15);
@@ -153,6 +158,7 @@ namespace LuckyAceForm
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.SeaGreen;
             label4.Location = new Point(65, 50);
             label4.Name = "label4";
             label4.Size = new Size(39, 15);
@@ -161,6 +167,7 @@ namespace LuckyAceForm
             // 
             // listBox1
             // 
+            listBox1.BackColor = Color.SeaGreen;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(306, 69);
@@ -171,6 +178,9 @@ namespace LuckyAceForm
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.CalendarMonthBackground = Color.SeaGreen;
+            dateTimePicker1.CalendarTitleBackColor = Color.SeaGreen;
+            dateTimePicker1.CalendarTitleForeColor = Color.Black;
             dateTimePicker1.Location = new Point(68, 121);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(197, 23);
@@ -178,6 +188,7 @@ namespace LuckyAceForm
             // 
             // textBox5
             // 
+            textBox5.BackColor = Color.SeaGreen;
             textBox5.Location = new Point(68, 179);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
@@ -186,6 +197,7 @@ namespace LuckyAceForm
             // 
             // textBox6
             // 
+            textBox6.BackColor = Color.SeaGreen;
             textBox6.Location = new Point(68, 241);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
@@ -195,6 +207,7 @@ namespace LuckyAceForm
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.SeaGreen;
             label5.Location = new Point(68, 161);
             label5.Name = "label5";
             label5.Size = new Size(44, 15);
@@ -204,6 +217,7 @@ namespace LuckyAceForm
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.SeaGreen;
             label6.Location = new Point(68, 223);
             label6.Name = "label6";
             label6.Size = new Size(44, 15);
@@ -212,26 +226,30 @@ namespace LuckyAceForm
             // 
             // button2
             // 
-            button2.Location = new Point(306, 286);
+            button2.BackgroundImage = LuckyAceApp.Properties.Resources.image_2025_05_26_19_27_30;
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Location = new Point(323, 278);
             button2.Name = "button2";
-            button2.Size = new Size(105, 35);
+            button2.Size = new Size(84, 77);
             button2.TabIndex = 15;
-            button2.Text = "Delete";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(436, 285);
+            button3.BackgroundImage = LuckyAceApp.Properties.Resources._5;
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.Location = new Point(443, 278);
             button3.Name = "button3";
-            button3.Size = new Size(112, 36);
+            button3.Size = new Size(81, 76);
             button3.TabIndex = 16;
-            button3.Text = "Edit";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click_1;
             // 
             // AdminForm
             // 
+            BackgroundImage = LuckyAceApp.Properties.Resources._2;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(601, 374);
             Controls.Add(button3);
             Controls.Add(button2);

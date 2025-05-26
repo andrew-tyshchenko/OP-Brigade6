@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj": {}
+    "C:\\Users\\User\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj": {}
   },
   "projects": {
-    "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj": {
+    "C:\\Users\\User\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
         "projectName": "LuckyAceApp",
-        "projectPath": "D:\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
-        "packagesPath": "C:\\Users\\Dmytro\\.nuget\\packages\\",
-        "outputPath": "D:\\OP-Brigade6\\LuckyAceApp\\obj\\",
+        "projectPath": "C:\\Users\\User\\OP-Brigade6\\LuckyAceApp\\LuckyAceApp.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\OP-Brigade6\\LuckyAceApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -86,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

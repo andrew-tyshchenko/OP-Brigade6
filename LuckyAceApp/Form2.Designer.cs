@@ -42,6 +42,8 @@ namespace LuckyAceForm
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             listBox2 = new ListBox();
             label4 = new Label();
+            toolStripStatusLabel2 = new ToolStripStatusLabel();
+            toolStripStatusLabel3 = new ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMatches).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBets).BeginInit();
@@ -121,7 +123,9 @@ namespace LuckyAceForm
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(105, 194);
+            label1.BackColor = Color.SeaGreen;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(105, 224);
             label1.Name = "label1";
             label1.Size = new Size(41, 15);
             label1.TabIndex = 2;
@@ -129,26 +133,31 @@ namespace LuckyAceForm
             // 
             // button1
             // 
-            button1.Location = new Point(263, 151);
+            button1.BackColor = Color.SeaGreen;
+            button1.ForeColor = SystemColors.ActiveCaptionText;
+            button1.Location = new Point(263, 165);
             button1.Name = "button1";
             button1.Size = new Size(104, 23);
             button1.TabIndex = 0;
             button1.Text = "Submit Bet";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // listBox1
             // 
+            listBox1.BackColor = Color.SeaGreen;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(0, 226);
+            listBox1.Location = new Point(30, 242);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(232, 244);
+            listBox1.Size = new Size(192, 169);
             listBox1.TabIndex = 9;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(105, 151);
+            numericUpDown1.BackColor = Color.SeaGreen;
+            numericUpDown1.ForeColor = SystemColors.ActiveCaptionText;
+            numericUpDown1.Location = new Point(96, 165);
             numericUpDown1.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(103, 23);
@@ -157,7 +166,9 @@ namespace LuckyAceForm
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(367, 69);
+            label6.BackColor = Color.SeaGreen;
+            label6.ForeColor = SystemColors.ActiveCaptionText;
+            label6.Location = new Point(368, 90);
             label6.Name = "label6";
             label6.Size = new Size(44, 15);
             label6.TabIndex = 14;
@@ -166,7 +177,9 @@ namespace LuckyAceForm
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(61, 69);
+            label5.BackColor = Color.SeaGreen;
+            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.Location = new Point(61, 90);
             label5.Name = "label5";
             label5.Size = new Size(44, 15);
             label5.TabIndex = 13;
@@ -175,29 +188,35 @@ namespace LuckyAceForm
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(33, 99);
+            radioButton1.BackColor = Color.SeaGreen;
+            radioButton1.ForeColor = SystemColors.ActiveCaptionText;
+            radioButton1.Location = new Point(30, 108);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(96, 19);
             radioButton1.TabIndex = 18;
             radioButton1.TabStop = true;
             radioButton1.Text = "Select Team 1";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(184, 99);
+            radioButton2.BackColor = Color.SeaGreen;
+            radioButton2.ForeColor = SystemColors.ActiveCaptionText;
+            radioButton2.Location = new Point(184, 108);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(86, 19);
             radioButton2.TabIndex = 19;
             radioButton2.TabStop = true;
             radioButton2.Text = "Select Draw";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.SeaGreen;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Location = new Point(184, 26);
             label2.Name = "label2";
             label2.Size = new Size(84, 21);
@@ -207,7 +226,9 @@ namespace LuckyAceForm
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(211, 69);
+            label3.BackColor = Color.SeaGreen;
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(207, 90);
             label3.Name = "label3";
             label3.Size = new Size(34, 15);
             label3.TabIndex = 21;
@@ -216,17 +237,21 @@ namespace LuckyAceForm
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(343, 99);
+            radioButton3.BackColor = Color.SeaGreen;
+            radioButton3.ForeColor = SystemColors.ActiveCaptionText;
+            radioButton3.Location = new Point(343, 108);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(96, 19);
             radioButton3.TabIndex = 22;
             radioButton3.TabStop = true;
             radioButton3.Text = "Select Team 2";
-            radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.UseVisualStyleBackColor = false;
             // 
             // statusStrip1
             // 
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.BackColor = Color.SeaGreen;
+            statusStrip1.BackgroundImageLayout = ImageLayout.None;
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3 });
             statusStrip1.Location = new Point(0, 482);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(467, 22);
@@ -241,24 +266,42 @@ namespace LuckyAceForm
             // 
             // listBox2
             // 
+            listBox2.BackColor = Color.SeaGreen;
             listBox2.FormattingEnabled = true;
             listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(251, 226);
+            listBox2.Location = new Point(244, 242);
             listBox2.Name = "listBox2";
-            listBox2.Size = new Size(216, 244);
+            listBox2.Size = new Size(195, 169);
             listBox2.TabIndex = 26;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(318, 194);
+            label4.BackColor = Color.SeaGreen;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.Location = new Point(318, 224);
             label4.Name = "label4";
             label4.Size = new Size(49, 15);
             label4.TabIndex = 27;
             label4.Text = "My Bets";
             // 
+            // toolStripStatusLabel2
+            // 
+            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            toolStripStatusLabel2.Size = new Size(118, 17);
+            toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
+            // toolStripStatusLabel3
+            // 
+            toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            toolStripStatusLabel3.Size = new Size(118, 17);
+            toolStripStatusLabel3.Text = "toolStripStatusLabel3";
+            // 
             // MainForm
             // 
+            BackColor = SystemColors.ButtonFace;
+            BackgroundImage = LuckyAceApp.Properties.Resources._2;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(467, 504);
             Controls.Add(label4);
             Controls.Add(listBox2);
@@ -300,6 +343,8 @@ namespace LuckyAceForm
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ListBox listBox2;
         private Label label4;
+        private ToolStripStatusLabel toolStripStatusLabel2;
+        private ToolStripStatusLabel toolStripStatusLabel3;
     }
 
 }
