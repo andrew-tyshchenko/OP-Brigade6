@@ -150,3 +150,4 @@ C:\Users\User\OP-Brigade6\LuckyAceApp\obj\Debug\net8.0-windows\LuckyAceApp.pdb
 C:\Users\User\OP-Brigade6\LuckyAceApp\obj\Debug\net8.0-windows\LuckyAceApp.genruntimeconfig.cache
 C:\Users\User\OP-Brigade6\LuckyAceApp\obj\Debug\net8.0-windows\ref\LuckyAceApp.dll
 C:\Users\User\OP-Brigade6\LuckyAceApp\obj\Debug\net8.0-windows\LuckyAceApp.Properties.Resources.resources
+D:\OP-Brigade6\LuckyAceApp\obj\Debug\net8.0-windows\LuckyAceApp.Properties.Resources.resources

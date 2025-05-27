@@ -72,11 +72,15 @@ namespace LuckyAceForm
                     MessageBox.Show("Успішний вхід!");
                     if (user.Username == "admin")
                     {
+                        this.Hide();
                         new AdminForm().ShowDialog();
+                        this.Show();
                     }
                     else
                     {
+                        this.Hide();
                         new MainForm(user).ShowDialog();
+                        this.Show();
                     }
 
                 }
