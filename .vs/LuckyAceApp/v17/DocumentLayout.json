@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\OP-Brigade6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96BA2983-0B58-42AB-8D6B-F28D0FD51E24}|LuckyAceApp.Tests\\LuckyAceApp.Tests.csproj|d:\\op-brigade6\\luckyaceapp.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96BA2983-0B58-42AB-8D6B-F28D0FD51E24}|LuckyAceApp.Tests\\LuckyAceApp.Tests.csproj|solutionrelative:luckyaceapp.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\betrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\betrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|d:\\op-brigade6\\luckyaceapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBD9ED-E862-4E66-AD2A-8A7CB24F78A4}|LuckyAceApp\\LuckyAceApp.csproj|solutionrelative:luckyaceapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +71,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\Class1.cs",
+              "RelativeDocumentMoniker": "LuckyAceApp\\Class1.cs",
+              "ToolTip": "D:\\OP-Brigade6\\LuckyAceApp\\Class1.cs",
+              "RelativeToolTip": "LuckyAceApp\\Class1.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAjwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:30:25.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "LuckyAceApp.Tests\\UnitTest1.cs",
+              "ToolTip": "D:\\OP-Brigade6\\LuckyAceApp.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "LuckyAceApp.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:28:10.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BetRepository.cs",
               "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\BetRepository.cs",
               "RelativeDocumentMoniker": "LuckyAceApp\\BetRepository.cs",
@@ -75,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\UserRepository.cs",
               "RelativeDocumentMoniker": "LuckyAceApp\\UserRepository.cs",
@@ -88,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MatchRepository.cs",
               "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\MatchRepository.cs",
               "RelativeDocumentMoniker": "LuckyAceApp\\MatchRepository.cs",
@@ -101,33 +135,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form4.cs",
               "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\Form4.cs",
               "RelativeDocumentMoniker": "LuckyAceApp\\Form4.cs",
               "ToolTip": "D:\\OP-Brigade6\\LuckyAceApp\\Form4.cs",
               "RelativeToolTip": "LuckyAceApp\\Form4.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAmwFIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwFIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T09:09:53.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\Form2.cs",
               "RelativeDocumentMoniker": "LuckyAceApp\\Form2.cs",
               "ToolTip": "D:\\OP-Brigade6\\LuckyAceApp\\Form2.cs",
               "RelativeToolTip": "LuckyAceApp\\Form2.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwB0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAwFoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T09:09:51.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\OP-Brigade6\\LuckyAceApp\\Form1.cs",
               "RelativeDocumentMoniker": "LuckyAceApp\\Form1.cs",

@@ -84,12 +84,6 @@ namespace LuckyAceForm
 
                 Bet bet = new Bet(newId, user.Id, match.Id, amount, team);
 
-                if (bet.Amount == 0 || bet.Amount.GetType() == typeof(decimal))
-                {
-                    MessageBox.Show("Amount of bet should be decimal nubmer bigger than zero.");
-                    return;
-                }
-
                 var validationResults = ValidationService.Validate(bet);
 
                 if (validationResults.Any())
